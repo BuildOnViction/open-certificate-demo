@@ -1,0 +1,250 @@
+/***
+	import font
+***/
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat:400,500,600&display=swap');
+//Fonts tomoissuer Icomoon
+@font-face {
+	font-family: 'VLGreatVibes';
+	src:  url('vl_greatvibes_regular.ttf');
+}
+/***
+	tyle css
+***/
+body {
+	background: #ffffff;
+	color: #1d1e31;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	word-break: break-word;
+}
+img {
+	max-width: 100%;
+}
+.tomo-bg-dark {
+	background-color: #323252;
+}
+
+/**/
+.main-error-404 {
+	min-height: calc(100vh - 56px);
+}
+@media only screen and (max-width: 767px) {
+	.main-error-404 {
+		min-height: calc(100vh - 56px);
+	}
+	.navbar-text {
+		font-size: 12px;
+	}
+}
+
+/**/
+.main-content {
+	padding: 5em 0;
+	min-height: calc(100vh - 56px - 70px);
+	position: relative;
+}
+.main-content::before {
+	background: url(../images/bg-logo-tomo.png) no-repeat 94% -80px;
+	background-size: auto 75%;
+	content: '';
+	width: 100%;
+	height: 100%;
+	max-width: 1140px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	z-index: -1;
+	transform: translateX(-50%);
+}
+@media only screen and (max-width: 1500px) and (min-width: 768px) {
+	.main-content {
+		padding: 4em 0 1em;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.main-content::before {
+		background-position: 65px -30px;
+		background-size: 100% auto;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.main-content {
+		padding: 2em 0;
+		min-height: calc(100vh - 56px - 44px);
+	}
+}
+/** tmp-title **/
+.tmp-title-one {
+	color: #1d1e31;
+	font-family: VLGreatVibes;
+	font-size: 56px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1;
+	margin: 0;
+	letter-spacing: 4px;
+}
+@media only screen and (max-width: 1024px) {
+	.tmp-title-one {
+		font-size: 46px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.tmp-title-one {
+		font-size: 28px;
+	}
+}
+
+/**/
+.text-uppercase {
+	text-transform: uppercase;
+}
+.tmp-sub-title-one {
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 1.8px;
+	color: #1d1e31;
+}
+@media only screen and (max-width: 767px) {
+	.tmp-sub-title-one {
+		font-size: 12px;
+	}
+}
+
+.tmp-sub-title-two {
+	font-size: 20px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #47467d;
+}
+@media only screen and (max-width: 767px) {
+	.tmp-sub-title-two {
+		font-size: 14px;
+	}
+}
+
+/**/
+.section {
+	padding-top: 3em;
+}
+@media only screen and (max-width: 1500px) and (min-width: 1025px) {
+	.section {
+		padding-top: 2.5em;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.section .row >div {
+		margin-bottom: 2em;
+	}
+	.section .row >div:nth-child(3),
+	.section .row >div:nth-child(4) {
+		margin-bottom: 0;
+	}
+}
+/**/
+.tomo-entry-header {
+	display: inline-block;
+}
+@media only screen and (max-width: 767px) {
+	.tomo-entry-header {
+		display:block;
+	}
+}
+
+.tomo-entry-content {
+	padding: 2em 0 3em;
+}
+@media only screen and (max-width: 1500px) {
+	.tomo-entry-content {
+		padding: 1em 0 3em;
+	}
+}
+
+.txt-min {
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #7473a6;
+}
+@media only screen and (max-width: 767px) {
+	.txt-min {
+		font-size: 13px;
+	}
+}
+
+.txt-lead {
+	font-size: 20px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	margin-top: .7em;
+}
+@media only screen and (max-width: 1199px) and (min-width: 991px) {
+	.txt-lead {
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.txt-lead {
+		font-size: 16px;
+	}
+}
+
+.txt-decs {
+	color: #323252;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+	line-height: 1.6;
+	margin-top: .7em;
+}
+@media only screen and (max-width: 1199px) and (min-width: 991px) {
+	.txt-decs {
+		font-size: 12px;
+	}
+}
+
+.txt-signature img {
+	max-width: 250px;
+}
+
+/**/
+.main-error-404 img {
+	width: 100%;
+	max-width: 620px;
+}
+
+
+/**
+	footer
+**/
+footer {
+	color: #323252;
+	padding: 2em 0;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.4;
+	letter-spacing: normal;
+}
+@media only screen and (max-width: 767px) {
+	footer {
+		font-size: 10px;
+		padding: 1em 0;
+	}
+}
