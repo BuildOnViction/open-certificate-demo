@@ -12,8 +12,10 @@ function getUrlVars()
 }
 
 let params = getUrlVars()
-let tokenId = params.tokenId.replace('#', '')
-console.log(tokenId)
+let tokenId = params.tokenId
+if (tokenId) {
+  tokenId = tokenId.replace(/_/g, " ")
+}
 $(document).ready(async function () {
 
   const abi = await $.getJSON('./abi.json')
