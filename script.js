@@ -27,7 +27,7 @@ $(document).ready(async function () {
     $('.username').html(certificateInfo.name.replace(/_/g, " "))
     $('.certificate').html(certificateInfo.course.replace(/_/g, " "))
     $('.score').html(certificateInfo.grade)
-    $('.status').html(certificateInfo.status)
+    $('.status').html(certificateInfo.status.replace(/_/g, " "))
     $('.userId').html(certificateInfo.tomoAddress)
     $('.certificateId').html(tokenId)
 
