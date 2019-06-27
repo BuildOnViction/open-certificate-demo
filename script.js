@@ -22,8 +22,8 @@ $(document).ready(async function () {
 
   try {
     let certificateInfo = await contract.methods.viewcert(tokenId).call()
-    $('.username').html(certificateInfo.name)
-    $('.certificate').html(certificateInfo.course)
+    $('.username').html(certificateInfo.name.replace(/_/g, " "))
+    $('.certificate').html(certificateInfo.course.replace(/_/g, " "))
     $('.score').html(certificateInfo.grade)
     $('.status').html(certificateInfo.status)
     $('.userId').html(certificateInfo.tomoAddress)
